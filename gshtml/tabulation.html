@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title> Convert number</title>
+</head>
+
+<script type="text/javascript">
+
+		function convertnumber(){
+
+			var hr, mint, sec;
+
+			 sec = document.getElementById('sec').value;
+			 hr = Math.floor(sec/60);
+			 mint = Math.floor(sec%60);
+
+			document.getElementById('box').innerHTML = hr + " hours : " + mint + " minutes";
+		}
+	</script>
+
+<body>
+	Enter a Number : <input type="text" id="sec">
+	<br>
+	<button onclick="convertnumber()">Convert</button>
+	<br>
+	<p id="box"></p>
+
+</body>
+</html>
